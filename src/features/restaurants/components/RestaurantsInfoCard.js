@@ -5,6 +5,7 @@ import star from "../../../../assets/star";
 import open from "../../../../assets/open";
 import { Spacer } from "../../../components/spacer/Spacer";
 import { Text } from "../../../components/typography/Text";
+import { Ionicons } from "@expo/vector-icons";
 import {
   RestaurantCard,
   RestaurantCardCover,
@@ -35,6 +36,7 @@ export const RestaurantsInfoCard = ({ restaurant = {} }) => {
       <RestaurantCardCover key={name} source={{ uri: photos[0] }} />
       <Info>
         <Text variant="label">{name}</Text>
+
         <Section>
           <Rating>
             {ratingArray.map(() => (
